@@ -4,7 +4,7 @@ A lightweight terminal-based messaging system built with Flask. Register your te
 
 ## 📋 How It Works
 
-1. **Register** – Each terminal gets a unique ID based on its architecture (CPU + OS).
+1. **Register** – Each terminal gets a unique ID based on its architecture.
 2. **Send** – A terminal pushes a message to another terminal's ID using `/append/`.
 3. **Listen** – The target terminal continuously polls `/listen/` and displays new messages.
 
