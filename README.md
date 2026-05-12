@@ -63,22 +63,15 @@ Enter the target terminal ID and your message.
 
 🔌 API Endpoints (for reference)
 
-Method Endpoint Description
+```
 POST /database/ Register a new terminal ID. Body: {"trmnl-id": "..."}
+
 GET /database/ Check if an ID exists. Query: ?trmnl-id=...
+
 POST /append/ Store a message for a target ID. Body: {"trmnl-id": "...", "message": "..."}
-GET /listen/ Get queued message for your ID. Query: ?trmnl-id=...
-GET /debugging/ View all registered IDs and messages (debug only)
 
----
+GET /listen/ Get queued message for your ID. Query: ?trmnl-id=...```
 
-📝 Notes
-
-· Each terminal ID is a unique MD5 hash of your device's architecture.
-· Messages are stored until the recipient listens.
-· The server clears messages after they're delivered (read-once).
-
----
 
 🛠️ Self-Hosting (Optional)
 
